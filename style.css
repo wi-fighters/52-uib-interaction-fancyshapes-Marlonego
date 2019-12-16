@@ -6,3 +6,24 @@ html, body {
 section {
     margin-top: 10px;
 }
+
+.task-one::before{
+    content:open-quote "Once upon the time";
+    font-weight: 900;
+}
+
+.task-one::after{
+    content: "..The end" close-quote  ;
+    font-weight: 900;
+}
+
+.task-two {
+    background-image: url(./assets/beach.jpg);
+    height: 500px;
+    width: 690px;
+   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.task-three {
+    transform: rotate(180deg);
+}
